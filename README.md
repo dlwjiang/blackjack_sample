@@ -3,7 +3,7 @@
 
 An example of a blackjack game written in Angular.JS
 
-  - Example at http://blackjack_dlwj.pancakeapps.com/
+  - Example [here](http://blackjack_dlwj.pancakeapps.com/)
 
 ![alt text](http://i.imgur.com/6jd8v8il.jpg "Logo Title Text 1")
 
