@@ -1,0 +1,61 @@
+<div>
+
+   <div class="ribbon-wrapper-green">
+    <div class="ribbon-green">Blackjack!</div>
+   </div>
+
+    <div id="playingTable" ng-controller="GameController">
+        <div class="container seeYou">
+           <div id="playingArea">
+
+    
+                <div class="seeYou col-xs-2 col-xs-offset-1" id="scoreboard">
+                    <div class="col-xs-6">Dealer</div>
+                    <div class="col-xs-6">Player</div>
+                    <div class="col-xs-6">{{dealerRoundsWon}}</div>
+                    <div class="col-xs-6">{{playerRoundsWon}}</div>
+                </div>
+
+                <!-- ================ -->
+                <!-- Dealer Area -->
+                <!-- ================ -->                
+
+               <div class="seeYou col-xs-8 col-xs-offset-2 row" id="dealerCards">
+                   <div class="cardArea col-xs-offset-4">
+                      
+
+                       <div ng-repeat="card in dealerCards" class="rotate-in">                          
+                           <div card suit="{{card.suit}}" value="{{card.value}}" first="{{$first}}"></div>
+                       </div>
+
+
+                   </div>
+               </div>
+               
+               <!-- ================ -->
+               <!-- Player Area -->
+               <!-- ================ -->                
+
+               <div class="seeYou col-xs-8 col-xs-offset-2 row" id="playerCards">
+                    <div class="cardArea col-xs-offset-4">
+
+                         <div ng-repeat="card in playerCards" class="rotate-in">
+                             <div card suit="{{card.suit}}" value="{{card.value}}"></div>
+                         </div>
+
+                    </div>
+                </div>
+
+                <!-- ================ -->
+                <!-- Control Area -->
+                <!-- ================ -->                
+
+                 <div class="seeYou col-xs-8 col-xs-offset-2 row" id="controls">
+                   <div class="btn btn-primary btn-lg" ng-click="hit()">Hit</div>
+                   <div class="btn btn-primary btn-lg" ng-click="stand()">Stand</div>
+                </div>
+
+           </div>
+        </div>
+    </div><!-- ============ End GameController ============ -->
+</div>

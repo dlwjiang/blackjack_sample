@@ -1,0 +1,54 @@
+/*my stuff*/
+body{
+  background-color:#1E3036;
+}
+#playingTable{
+  width: 100%;
+  height: 800px;
+  margin: 0px auto;
+  background: url('blackjack_table_blur.png') no-repeat center;
+}
+
+.seeYou{
+    /*border:2px solid white;*/
+}
+
+#playerCards{
+    text-align: center;
+}
+
+#playingArea{
+    margin-top:100px;
+}
+
+#playerCards{
+    margin-top: 100px;
+}
+
+#controls{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-primary{
+    margin-left      : 60px;
+    margin-right     : 60px;
+    width            : 100px;
+    background-color : #0F5517;
+    border-color     : #FFFFFF;
+    border-width     : 1px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    color            : #fff;
+    background-color : #386D38;
+    border-color     : #FFFFFF;
+}
+
+#scoreboard{
+  text-align: center;
+  margin-left: 145px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
