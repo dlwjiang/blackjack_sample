@@ -13,6 +13,10 @@ Description
 
 Sample app built with Yeoman (angular generator).
 
+`npm install` for node dependencies
+
+`bower install` for bower dependencies
+
 `grunt serve` to run
 
 `grunt test` to test
