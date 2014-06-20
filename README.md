@@ -8,7 +8,7 @@ An example of a blackjack game written in Angular.js
 ![alt text](http://i.imgur.com/6jd8v8il.jpg "Logo Title Text 1")
 
 
-Description
+Description 
 ----
 
 Sample app built with Yeoman (angular generator).
@@ -29,5 +29,5 @@ Jasmine tests are under `test/spec`
 Other
 ----
 
-Spritesheets, CSS code, and background image provided by www.betable.com
+Spritesheets, CSS code, and background images provided by www.betable.com
 
