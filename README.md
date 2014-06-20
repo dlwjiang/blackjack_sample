@@ -1,7 +1,7 @@
 ##Blackjack Game
 
 
-An example of a blackjack game written in Angular.JS
+An example of a blackjack game written in Angular.js
 
   - Example [here](http://blackjack_dlwj.pancakeapps.com/)
 
