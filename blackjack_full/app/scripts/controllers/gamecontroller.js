@@ -2,18 +2,18 @@
 /*globals app*/
 
 /*
-                              ##                        ###      ###                               
-   ####                       ##                         ##       ##                               
-  ##  ##                      ##                         ##       ##                               
- ##        #####   ## ###   ######   ## ###    #####     ##       ##      #####   ## ###    #####  
- ##       ##   ##  ###  ##    ##     ###      ##   ##    ##       ##     ##   ##  ###      ##      
- ##       ##   ##  ##   ##    ##     ##       ##   ##    ##       ##     #######  ##        ####   
-  ##  ##  ##   ##  ##   ##    ##     ##       ##   ##    ##       ##     ##       ##           ##  
-   ####    #####   ##   ##     ###   ##        #####    ####     ####     #####   ##       #####   
-                                                                                                   
-*/                                                                                               
+                              ##                        ###      ###
+   ####                       ##                         ##       ##
+  ##  ##                      ##                         ##       ##
+ ##        #####   ## ###   ######   ## ###    #####     ##       ##      #####   ## ###    #####
+ ##       ##   ##  ###  ##    ##     ###      ##   ##    ##       ##     ##   ##  ###      ##
+ ##       ##   ##  ##   ##    ##     ##       ##   ##    ##       ##     #######  ##        ####
+  ##  ##  ##   ##  ##   ##    ##     ##       ##   ##    ##       ##     ##       ##           ##
+   ####    #####   ##   ##     ###   ##        #####    ####     ####     #####   ##       #####
 
- app.controller('GameController', 
+*/
+
+ app.controller('GameController',
 
     ["$scope", "Deck", "$timeout",
 
@@ -39,7 +39,7 @@
 
           if (playerScore > 21){
             showScores();
-            alert("You Busted!");
+            swal({   title: "Busted!",   text: "You went over 21!",   type: "error",   confirmButtonText: "Darn" });
             $scope.dealerRoundsWon++;
             newHand();
           }
@@ -59,23 +59,23 @@
         }
         else if (dealerScore > 21){
           showScores();
-          alert("Dealer Busts!");
+          swal({   title: "Dealer Busts!",   text: "Guess he didn't see that coming.",   type: "success",   confirmButtonText: "Haha!" });
           $scope.playerRoundsWon++;
           newHand();
         }
         else {
           showScores();
           if (playerScore === dealerScore){
-            alert("Tie!");
+            swal({   title: "Tie!",   text: "At least you didn't lose.",   type: "info",   confirmButtonText: "Ok" });
             newHand();
           }
           else if (playerScore > dealerScore){
-            alert("Player Wins");
+            swal({   title: "You Win!",   text: "Congratulations and stuff.",   type: "success",   confirmButtonText: "Yay!" });
             $scope.playerRoundsWon++;
             newHand();
           }
           else if (playerScore < dealerScore){
-            alert("Player Loses");
+            swal({   title: "You Lose!",   text: "Try again next time.",   type: "error",   confirmButtonText: "= (" });
             $scope.dealerRoundsWon++;
             newHand();
           }
